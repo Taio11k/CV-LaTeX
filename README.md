@@ -64,3 +64,13 @@ build to check the page count.
 
 **Skills lines wrap just above 123 characters.** Keeping each under that
 stops a line spilling two trailing words onto a line of their own.
+
+## Licence
+
+The LaTeX template, macros and build script are released under the
+[MIT Licence](LICENSE) — fork them and put your own CV through them.
+
+That covers the machinery, not the contents. The personal material in
+`title.tex`, `education.tex`, `professional_experience.tex`, `projects.tex`,
+`skills.tex` and `certification.tex` is one person's employment history and
+contact details. Replace it with your own rather than reusing it.
