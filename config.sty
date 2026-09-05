@@ -1,0 +1,117 @@
+% ============================================================
+%  Resume style configuration
+%  Satria Wibawa Hadiwijaya
+% ============================================================
+
+\usepackage[a4paper,
+    left=13mm,
+    right=13mm,
+    top=10mm,
+    bottom=10mm]{geometry}
+
+% --- Encoding and fonts ---
+% T1 + a scalable outline font matter more than they look. Applicant
+% tracking systems read the PDF's extracted text layer, and under the
+% default OT1 encoding ligatures and hyphens extract as broken glyphs.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage[british]{babel}
+
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+% --- Link styling: dark navy reads as professional in print and on screen ---
+\definecolor{linknavy}{RGB}{0,51,102}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linknavy,
+    filecolor=linknavy,
+    urlcolor=linknavy,
+    citecolor=linknavy,
+    pdftitle={Satria Wibawa Hadiwijaya - Resume},
+    pdfauthor={Satria Wibawa Hadiwijaya},
+    pdfsubject={Graduate Electrical Engineer - Resume},
+    pdfkeywords={electrical engineering, control systems, instrumentation,
+                 embedded systems, power systems, renewable energy,
+                 firmware, graduate engineer},
+    pdflang={en-AU},
+    pdfpagemode=UseNone,
+}
+
+% --- Contact-line separator ---
+% A text-mode bar, not $|$. Math runs extract unpredictably.
+\newcommand{\cvsep}{\hspace{0.45em}\textbar\hspace{0.45em}}
+
+% --- Global list settings: tight, consistent, no stray vertical space ---
+\setlist[itemize]{
+    topsep=2pt,
+    partopsep=0pt,
+    parsep=0pt,
+    itemsep=1.5pt,
+    leftmargin=4.2mm,
+    label=\textbullet
+}
+
+\setlength{\parindent}{0pt}
+\raggedbottom
+
+% --- Page-breaking behaviour ---
+% Keep an entry heading with the bullets underneath it, and keep single
+% lines off the top and bottom of a page.
+\clubpenalty=10000
+\widowpenalty=10000
+\hyphenpenalty=200
+\tolerance=1200
+\emergencystretch=1em
+
+\newcommand{\sectionLine}{\titlerule[1pt]}
+
+% --- Header line: #1 flush left, #2 flush right ---
+% \parfillskip has to go to zero inside the group. It defaults to
+% "0pt plus 1fil", so at a paragraph end it competes with \hfill for the
+% slack and the right-hand text settles halfway across the line instead
+% of against the margin. \nobreak then keeps the heading with its body.
+\newcommand{\entryline}[2]{%
+    {\parfillskip=0pt\relax\noindent #1\hfill #2\par}%
+    \nobreak
+}
+
+% --- Entry block: role held at an organisation ---
+% #1 Organisation   #2 Location      #3 Role
+% #4 Dates          #5 Body
+\newcommand{\newEntry}[5]{%
+    \entryline{\textbf{#1}}{\textit{#2}}%
+    \entryline{\small\textit{#3}}{\small\textit{#4}}%
+    {\small #5}%
+    \vspace{0.5em}%
+}
+
+% --- Entry block: project, which has no location line ---
+% #1 Title   #2 Dates   #3 Context   #4 Body
+\newcommand{\projEntry}[4]{%
+    \entryline{\textbf{#1}}{\textit{#2}}%
+    {\small\noindent\textit{#3}\par}%
+    \nobreak
+    {\small #4}%
+    \vspace{0.5em}%
+}
+
+\titleformat{\section}[hang]
+{\large\bfseries}
+{}
+{0em}
+{}
+[\vspace{-0.3ex}\sectionLine]
+
+\titlespacing*{\section}{0pt}{1.0ex}{0.7ex}
+
+% Leading. Below 1.0 squeezes lines tighter than LaTeX's default and costs
+% legibility; this sits just above default so bullets that wrap stay readable.
+\renewcommand{\baselinestretch}{1.04}

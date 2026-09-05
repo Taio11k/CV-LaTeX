@@ -1,0 +1,25 @@
+# LaTeX build artefacts.
+# build.ps1 writes these to %TEMP% rather than here, but Overleaf,
+# latexmk and editor integrations will drop them next to the sources.
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Rendered page images from build.ps1 -Png
+pg-*.png
+
+# OS and editor noise
+Thumbs.db
+.DS_Store
+*.swp
+.vscode/

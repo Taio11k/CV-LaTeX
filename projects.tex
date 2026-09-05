@@ -1,0 +1,81 @@
+\section*{Projects}
+
+% --- FINAL YEAR PROJECT (COMPLETED) ---
+\projEntry{\href{https://drive.google.com/file/d/1dSFxPbqb8e6QTG37ltxU5vcMvSJfFY8U/view?usp=sharing}{Image Processing for a Bionic Eye: Retinal Encoder Evaluation}}
+{Jul 2025 -- Jun 2026}
+{Final Year Project (Honours), graded 88, High Distinction}
+{
+\begin{itemize}
+    \item Built a retinal encoder and phosphene-rendering pipeline in Python with Pulse2Percept. The model covers photoreceptor filtering, centre-surround receptive fields, contrast gain control and ON/OFF pathways, and turns camera frames into simulated bionic-eye percepts.
+    \item Designed and ran a 15-participant perceptual study under Monash ethics approval MUHREC 44457: four encoder configurations, three custom recognition tasks, 60 randomised trials.
+    \item Found spatial resolution to be the dominant driver of recognition accuracy. The best configuration reached 69.2\% mean accuracy against 55.1\% for the coarsest, a 14-point gap between a 625- and a 144-electrode array.
+\end{itemize}
+}
+
+% --- 2025 (ENDING NOV 2025) ---
+\projEntry{\href{https://drive.google.com/file/d/10slNfx6Gpfc7wf-j7otpUOHKsmMZu-Ek/view?usp=sharing}{Wildlife Observation Robot: Visual Detection and GUI}}
+{Aug 2025 -- Nov 2025}
+{ECE4191 Electrical Design Project, Team E08}
+{
+\begin{itemize}
+    \item Trained a YOLOv12 animal detector on 4,000+ images in Google Colab. It resolves a detection inside 10 seconds across an 80-degree field of view at 30--40 cm.
+    \item Tuned the live video pipeline (TCP streaming, JPEG decoding, PyTorch inference) to hold 10 FPS analysis under 300 ms end-to-end latency.
+    \item Wired the detector into a custom Tkinter GUI with bounding boxes and detection history, and took the interface from 5 FPS to 20 FPS.
+    \item Ran the full vision and GUI stack in live demonstration: 21 automatic detections against a target of 8.
+\end{itemize}
+}
+
+\projEntry{\href{https://drive.google.com/file/d/1XwM_U0PggrjY1gbPphw66nsjV4cmrvsD/view?usp=sharing}{True RMS-to-DC Converter (Analogue Circuit Design)}}
+{Aug 2025 -- Nov 2025}
+{ECE3161 Mini-Project, Team B22}
+{
+\begin{itemize}
+    \item Designed the multiplier, divider and square-root stages, and ran LTspice sweeps to check RMS accuracy from DC to 20 kHz.
+    \item Built and tested several implementations of the RMS core, matching transistor and resistor networks for stable current-mode operation.
+    \item Co-developed and debugged the precision rectifier so it held accuracy on large DC offsets and low-amplitude signals.
+    \item Laid out and troubleshot the wiring so measurements repeated to within 3\% error.
+\end{itemize}
+}
+
+% --- 2025 (ENDING MAY 2025) ---
+\projEntry{\href{https://drive.google.com/file/d/1VaiDqLu0izd1Ne1iGVTpliatuy5b8bjc/view?usp=sharing}{Deep Learning Traffic Sign Recognition Model}}
+{Feb 2025 -- May 2025}
+{CIV4100 Autonomous Vehicle Systems Project}
+{
+\begin{itemize}
+    \item Cleaned and augmented a balanced 60,000+ image set across 43 traffic-sign classes.
+    \item Trained a custom CNN to 97.1\% validation accuracy, then applied AlexNet transfer learning to reach 98.7\% and lift Kaggle test accuracy from 67.4\% to 71.1\%.
+    \item Probed robustness with metamorphic tests and isolated translation as the weakest axis.
+\end{itemize}
+}
+
+\projEntry{\href{https://drive.google.com/file/d/17jAZ1ken11P711SUM5tciYvIGoek9Eil/view?usp=sharing}{Real-Time Video Processing System (DE-10 FPGA)}}
+{Feb 2025 -- May 2025}
+{ECE3073 Computer Systems, Team C15}
+{
+\begin{itemize}
+    \item Gave the board hands-free control by integrating its accelerometer, so a tap, double-tap or tilt switches display mode or rotates the quad-display layout.
+    \item Held gesture-to-response latency to 0.1--0.2 s across four real-time video-processing modes.
+\end{itemize}
+}
+
+% --- 2024 ---
+\projEntry{\href{https://drive.google.com/file/d/1wpQyfsQlb375EbLi368ST0WDiYVH8svU/view?usp=sharing}{Visionary Ventures: Automated Post-Cataract Eye Shield}}
+{Jun 2024 -- Nov 2024}
+{ECE4087 MedTech Entrepreneurship Project}
+{
+\begin{itemize}
+    \item Co-designed a wearable device that delivers post-cataract eye drops on a schedule, pairing reusable electronics with a disposable medical shield. Set the R\&D roadmap across three prototype concepts on a 12--18 month test plan.
+    \item Wrote the regulatory and clinical strategy for a Class IIa TGA device, from first-in-human (n=20) through to a pivotal trial (n=100), and built part of the financial model for a \$1M seed round.
+\end{itemize}
+}
+
+% --- 2023 ---
+\projEntry{\href{https://github.com/Taio11k/IoT-Based-Plant-Care-and-Monitoring-System-for-Potted-Plants}{IoT-Based Plant Care and Monitoring System}}
+{Mar 2023 -- May 2023}
+{Embedded Systems Final Project}
+{
+\begin{itemize}
+    \item Kept potted plants watered without manual checks by building an ESP32 soil-moisture monitor that syncs live and triggers relay irrigation below a set dryness threshold, on PCB and electronics laid out in KiCad and Proteus around DHT22 sensors and optoisolators.
+\end{itemize}
+}
