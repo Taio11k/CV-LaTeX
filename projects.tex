@@ -1,5 +1,17 @@
 \section*{Projects}
 
+% --- 2026 (ONGOING) ---
+\projEntry{\href{https://github.com/Taio11k/Power-Project}{CSV Plotter: Power-System Benchmarking App (Open Source)}}
+{Sep 2026 -- Present}
+{Personal project, v0.7.1 beta: React, Electron and Python}
+{
+\begin{itemize}
+    \item Built an offline app for benchmarking power-system simulations against field measurements, an open-source alternative to Enerplot: overlaid traces, A/B cursors, linked zoom and one tab per test case. Ships as one HTML file and a Windows app.
+    \item Reverse-engineered the binary PSCAD \texttt{.psout} and PSS\textregistered{}E \texttt{.out}/\texttt{.outx} formats from raw bytes, without vendor libraries; the Python and in-app readers matched on all 373 columns of real grid-code test files.
+    \item Opened a 1 GB, 14.5-million-row recording in about 18 s through a background worker and spike-preserving min/max thinning; covered by 219 unit tests.
+\end{itemize}
+}
+
 % --- FINAL YEAR PROJECT (COMPLETED) ---
 \projEntry{\href{https://drive.google.com/file/d/1dSFxPbqb8e6QTG37ltxU5vcMvSJfFY8U/view?usp=sharing}{Image Processing for a Bionic Eye: Retinal Encoder Evaluation}}
 {Jul 2025 -- Jun 2026}
@@ -60,22 +72,3 @@
 }
 
 % --- 2024 ---
-\projEntry{\href{https://drive.google.com/file/d/1wpQyfsQlb375EbLi368ST0WDiYVH8svU/view?usp=sharing}{Visionary Ventures: Automated Post-Cataract Eye Shield}}
-{Jun 2024 -- Nov 2024}
-{ECE4087 MedTech Entrepreneurship Project}
-{
-\begin{itemize}
-    \item Co-designed a wearable device that delivers post-cataract eye drops on a schedule, pairing reusable electronics with a disposable medical shield. Set the R\&D roadmap across three prototype concepts on a 12--18 month test plan.
-    \item Wrote the regulatory and clinical strategy for a Class IIa TGA device, from first-in-human (n=20) through to a pivotal trial (n=100), and built part of the financial model for a \$1M seed round.
-\end{itemize}
-}
-
-% --- 2023 ---
-\projEntry{\href{https://github.com/Taio11k/IoT-Based-Plant-Care-and-Monitoring-System-for-Potted-Plants}{IoT-Based Plant Care and Monitoring System}}
-{Mar 2023 -- May 2023}
-{Embedded Systems Final Project}
-{
-\begin{itemize}
-    \item Kept potted plants watered without manual checks by building an ESP32 soil-moisture monitor that syncs live and triggers relay irrigation below a set dryness threshold, on PCB and electronics laid out in KiCad and Proteus around DHT22 sensors and optoisolators.
-\end{itemize}
-}

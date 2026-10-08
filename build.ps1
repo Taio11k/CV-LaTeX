@@ -15,7 +15,7 @@
 
 param(
     # Output filename. Change this when the CV rolls to a new quarter.
-    [string] $PdfName = 'CV_Satria_Hadiwijaya_2026_Q3.pdf',
+    [string] $PdfName = 'CV_Satria_Hadiwijaya_2026_Q4.pdf',
     # Set to keep the rendered page PNGs for inspection.
     [switch] $Png
 )
