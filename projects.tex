@@ -1,14 +1,14 @@
 \section*{Projects}
 
 % --- 2026 (ONGOING) ---
-\projEntry{\href{https://github.com/Taio11k/Power-Project}{CSV Plotter: Power-System Benchmarking App (Open Source)}}
+\projEntry{\href{https://swingbus-present.vercel.app/}{Swingbus: Power-System Benchmarking Toolkit (Grid Plotter)}}
 {Sep 2026 -- Present}
-{Personal project, v0.7.1 beta: React, Electron and Python}
+{Personal project, v0.9.5 beta: React, ECharts, Electron and Python}
 {
 \begin{itemize}
-    \item Built an offline app for benchmarking power-system simulations against field measurements, an open-source alternative to Enerplot: overlaid traces, A/B cursors, linked zoom and one tab per test case. Ships as one HTML file and a Windows app.
-    \item Reverse-engineered the binary PSCAD \texttt{.psout} and PSS\textregistered{}E \texttt{.out}/\texttt{.outx} formats from raw bytes, without vendor libraries; the Python and in-app readers matched on all 373 columns of real grid-code test files.
-    \item Opened a 1 GB, 14.5-million-row recording in about 18 s through a background worker and spike-preserving min/max thinning; covered by 219 unit tests.
+    \item Built an offline toolkit for benchmarking power-system simulations against field measurements, an easier alternative to Enerplot. The Grid Plotter overlays traces with A/B cursors, linked zoom and one tab per test case; a Grid Calculator sizes SMIB tests (Zs from SCR and X/R, source voltage, fault impedance for a dip). Ships as one HTML file and a Windows app.
+    \item Reverse-engineered the binary PSCAD \texttt{.psout} and PSS\textregistered{}E \texttt{.out}/\texttt{.outx} formats from raw bytes with no vendor libraries, plus MATLAB and COMTRADE readers; Python and in-app readers matched on all 373 columns of real grid-code test files.
+    \item Opened a 1 GB, 14.5-million-row recording in about 18 s through a background worker and spike-preserving min/max thinning; covered by 529 unit tests.
 \end{itemize}
 }
 
