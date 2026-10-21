@@ -1,14 +1,23 @@
 \section*{Projects}
 
 % --- 2026 (ONGOING) ---
+\projEntry{\href{https://taio11k.github.io/}{Personal Portfolio Website (taio11k.github.io)}}
+{Sep 2026 -- Present}
+{Personal project: HTML, CSS and JavaScript on GitHub Pages}
+{
+\begin{itemize}
+    \item Designed and built a portfolio site with no framework, build step or dependencies, its projects ordered by their place in the signal chain (Sense, Process, Actuate, Verify) as a filter; WCAG AA contrast on every colour pair.
+\end{itemize}
+}
+
 \projEntry{\href{https://swingbus-present.vercel.app/}{Swingbus: Power-System Benchmarking Toolkit (Grid Plotter)}}
 {Sep 2026 -- Present}
 {Personal project, v0.9.5 beta: React, ECharts, Electron and Python}
 {
 \begin{itemize}
-    \item Built an offline toolkit for benchmarking power-system simulations against field measurements, an easier alternative to Enerplot. The Grid Plotter overlays traces with A/B cursors, linked zoom and one tab per test case; a Grid Calculator sizes SMIB tests (Zs from SCR and X/R, source voltage, fault impedance for a dip). Ships as one HTML file and a Windows app.
+    \item Built an offline alternative to Enerplot for benchmarking simulations against field measurements: a Grid Plotter (overlays, A/B cursors, linked zoom, a tab per test case) and a Grid Calculator for SMIB set-up, as one HTML file or a Windows app.
     \item Reverse-engineered the binary PSCAD \texttt{.psout} and PSS\textregistered{}E \texttt{.out}/\texttt{.outx} formats from raw bytes with no vendor libraries, plus MATLAB and COMTRADE readers; Python and in-app readers matched on all 373 columns of real grid-code test files.
-    \item Opened a 1 GB, 14.5-million-row recording in about 18 s through a background worker and spike-preserving min/max thinning; covered by 529 unit tests.
+    \item Opened a 1 GB, 14.5-million-row recording in about 18 s with a background worker and spike-preserving thinning; 529 unit tests.
 \end{itemize}
 }
 
